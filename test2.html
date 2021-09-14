@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="XXX...">
+    <meta name="description" content="AAA...">
+    <meta name="author" content="YYY...">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./images/my-icon.png" type="image/">
+</head>
+<body>
+    <h1>-- Form Tag --</h1>
+    <form action="#" method="GET"> 
+        <fieldset>
+          <legend>ข้อมูลส่วนตัว</legend>
+            ชื่อ <input type="text" name="emp_name" id="">
+            <br><br>
+            ปีเกิด <input type="number" name="emp_byesr" id=""> 
+            <br><br>
+            รหัสผ่าน <input type="password" name="emp_pwd" id="">
+            <br><br>
+        </fieldset>
+        <fieldset>
+          F<legend>ข้อมูลทั่วไป</legend>
+            เพศ
+            <!-- radio ต้องเลือก และเลือกได้ 1 -->
+            <input type="radio" name="emp_sex" id="" value="ชาย">ชาย
+            <input type="radio" name="emp_sex" id="" value="หญิง">หญิง
+            <input type="radio" name="emp_sex" id=""    checked value="999">ทางเลือก
+            <br><br>
+            การศึกษาสูงสุด
+            <!-- select/option ใช้เลือก 1. เลือกได้แค่ 1 2.เลือกมากกว่า 1 -->
+            <select name="emp_educate" id="">
+            <option value="ตรี">ปริญญาตรี</option>
+            <option value="โท">ปริญญาโท</option>
+            <option value="เอก">ปริญญาตเอก</option>
+            </select>
+            <br><br>
+            คำนำหน้า
+            <!--
+            select/option เลือกได้แค่ 1
+            -->
+            <select name="emp_" id="" size="3">
+             <option value="ด.ช">เด็กชาย</option>
+             <option value="ด.ญ">เด็กหญิง</option>
+             <option value="น.ส">นางสาว</option>
+             <option value="นาง">นาง</option>
+             <option value="นาย">นาย</option>
+            </select>
+            <br><br>
+            เครื่องดื่มที่ชอบ
+            <!--
+            select/option เลือกได้แค่ 1
+            -->
+            <select name="emp_drink" id="" size="4" multiple>
+            <option value="น้ำส้ม">น้ำส้ม</option>
+            <option value="กาแฟ">กาแฟ</option>
+            <option value="ชา">ชา</option>
+            <option value="น้ำแดง">น้ำแดง</option>
+            <option value="โค้ก">โค้ก</option>
+            <option value="แฟนต้า">แฟนต้า</option>
+            <option value="นมชมพู">นมชมพู</option>
+            </select>
+            <br><br>
+        </fieldset>
+
+    </form>
+</body>
+</html>
